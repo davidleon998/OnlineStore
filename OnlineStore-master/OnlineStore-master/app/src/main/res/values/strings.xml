@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RealTech</string>
+    <string name="producto_imagen">Imagen del producto</string>
+    <string name="agregar_al_carrito">Agregar al carrito</string>
+    <string name="carrito_compras">Carrito de Compras</string>
+    <string name="finalizar_compra">Finalizar Compra</string>
+    <string name="escanear_qr">Ver QR Formulario</string>
+    <string name="ubicacion_tienda">Ubicación de la Tienda</string>
+    <string name="cerrar_sesion">Cerrar Sesión</string>
+</resources>

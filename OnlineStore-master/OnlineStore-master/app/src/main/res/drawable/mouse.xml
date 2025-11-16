@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <!-- Cuerpo principal del mouse -->
+    <path
+        android:fillColor="#FF1976D2"
+        android:pathData="M60,80 Q60,40 100,40 Q140,40 140,80 Q140,120 100,120 Q60,120 60,80 Z" />
+    
+    <!-- Resaltado superior -->
+    <path
+        android:fillColor="#FF42A5F5"
+        android:pathData="M70,70 Q70,50 100,50 Q130,50 130,70 Q130,90 100,90 Q70,90 70,70 Z" />
+    
+    <!-- Rueda de scroll -->
+    <path
+        android:fillColor="#FF81D4FA"
+        android:pathData="M85,75 L115,75 L115,85 L85,85 Z" />
+    
+    <!-- Líneas de la rueda -->
+    <path
+        android:strokeWidth="2"
+        android:strokeColor="#FFFFFF"
+        android:pathData="M90,80 L110,80" />
+    
+    <!-- Botones izquierdo y derecho -->
+    <path
+        android:fillColor="#FF42A5F5"
+        android:pathData="M70,95 Q70,85 80,85 Q90,85 90,95 L90,105 Q90,115 80,115 Q70,115 70,105 Z" />
+    <path
+        android:fillColor="#FF42A5F5"
+        android:pathData="M130,95 Q130,85 120,85 Q110,85 110,95 L110,105 Q110,115 120,115 Q130,115 130,105 Z" />
+    
+    <!-- Sensor óptico -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M92,105 A8,8 0 1,1 108,105 A8,8 0 1,1 92,105 Z" />
+    <path
+        android:fillColor="#FF81D4FA"
+        android:pathData="M96,105 A4,4 0 1,1 104,105 A4,4 0 1,1 96,105 Z" />
+</vector>

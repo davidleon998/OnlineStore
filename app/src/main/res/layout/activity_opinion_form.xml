@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título Principal -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🛍️ Formulario de Opinión de Usuarios"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue_dark"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tienda Virtual"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue_medium"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Descripción -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Queremos conocer tu experiencia usando nuestra aplicación de tienda virtual. Tus respuestas nos ayudarán a mejorar el diseño, el funcionamiento y los servicios que ofrecemos.\n\nEl formulario no tomará más de 3 minutos. ¡Gracias por participar!"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:padding="12dp"
+            android:background="@android:color/white"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Sección 1: Datos del Usuario -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🧑 Sección 1: Datos del Usuario"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue_dark"
+            android:padding="8dp"
+            android:background="@color/blue_light"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Pregunta 1: Nombre completo -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. ¿Cuál es tu nombre completo?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre completo"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/edtNombreCompleto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Pregunta 2: Email -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. Correo electrónico (opcional)"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Pregunta 3: Rango de edad -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. ¿En qué rango de edad te encuentras?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rgRangoEdad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/rbEdadMenos18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Menos de 18 años"
+                android:textSize="14sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbEdad18_25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="18 a 25 años"
+                android:textSize="14sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbEdad26_35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="26 a 35 años"
+                android:textSize="14sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbEdad36_50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="36 a 50 años"
+                android:textSize="14sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbEdadMas50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Más de 50 años"
+                android:textSize="14sp"
+                android:padding="8dp" />
+        </RadioGroup>
+
+        <!-- Sección 2: Experiencia dentro de la Aplicación -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📱 Sección 2: Experiencia dentro de la Aplicación"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue_dark"
+            android:padding="8dp"
+            android:background="@color/blue_light"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Pregunta 4: Experiencia general -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4. ¿Cómo calificarías tu experiencia general usando la aplicación?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(1 = Muy mala, 5 = Excelente)"
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="8dp" />
+
+        <RatingBar
+            android:id="@+id/ratingExperienciaGeneral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"
+            android:rating="0"
+            android:layout_gravity="start"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Pregunta 5: Facilidad de registro -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5. ¿Qué tan fácil te resultó registrarte e iniciar sesión con tu cuenta?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rgFacilidadRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/rbRegistroMuyFacil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Muy fácil, el proceso fue claro y rápido"
+                android:textSize="14sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbRegistroConfuso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Un poco confuso, pero logré hacerlo"
+                android:textSize="14sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbRegistroVariasVeces"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tuve que intentarlo varias veces"
+                android:textSize="14sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbRegistroNoPude"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No pude completar el inicio de sesión"
+                android:textSize="14sp"
+                android:padding="8dp" />
+        </RadioGroup>
+
+        <!-- Pregunta 6: Organización de productos -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="6. ¿Qué opinas sobre la organización de los productos dentro de la aplicación?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(1 = Muy mala, 5 = Excelente)"
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="8dp" />
+
+        <RatingBar
+            android:id="@+id/ratingOrganizacionProductos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"
+            android:rating="0"
+            android:layout_gravity="start"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Pregunta 7: Carrito de compras -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7. ¿Qué tan satisfecho estás con el funcionamiento del carrito de compras?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(1 = Muy insatisfecho, 5 = Muy satisfecho)"
+            android:textSize="12sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="8dp" />
+
+        <RatingBar
+            android:id="@+id/ratingCarritoCompras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1"
+            android:rating="0"
+            android:layout_gravity="start"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Pregunta 8: Uso del QR -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8. ¿Utilizaste el código QR que aparece en la aplicación?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rgUsoQR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/rbQRSiFunciono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sí, y funcionó correctamente"
+                android:textSize="14sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbQRSiProblemas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sí, pero tuve problemas al escanearlo"
+                android:textSize="14sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbQRNoUsado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No, aún no lo he usado"
+                android:textSize="14sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbQRNoSabia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No sabía que existía esa función"
+                android:textSize="14sp"
+                android:padding="8dp" />
+        </RadioGroup>
+
+        <!-- Pregunta 9: Utilidad del mapa -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="9. ¿Te resultó útil la opción de ver la ubicación de la tienda física en el mapa?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rgUtilidadMapa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/rbMapaSiUtil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sí, me ayudó a ubicar la tienda fácilmente"
+                android:textSize="14sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbMapaSiMejorar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sí, pero podría ser más detallada"
+                android:textSize="14sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbMapaNoUtil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No me resultó útil"
+                android:textSize="14sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbMapaNoUsado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No la he usado todavía"
+                android:textSize="14sp"
+                android:padding="8dp" />
+        </RadioGroup>
+
+        <!-- Sección 3: Opinión y Sugerencias -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💬 Sección 3: Opinión y Sugerencias"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue_dark"
+            android:padding="8dp"
+            android:background="@color/blue_light"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Pregunta 10: Aspectos que gustaron -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10. ¿Qué aspectos de la aplicación te gustaron más y por qué?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Describe los aspectos que más te gustaron"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/edtAspectosGustaron"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine|textCapSentences"
+                android:minLines="4"
+                android:maxLines="8"
+                android:gravity="top|start"
+                android:scrollbars="vertical" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Pregunta 11: Aspectos a mejorar -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="11. ¿Qué aspectos crees que deberíamos mejorar o cambiar?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Describe los aspectos que deberíamos mejorar"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/edtAspectosMejorar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine|textCapSentences"
+                android:minLines="4"
+                android:maxLines="8"
+                android:gravity="top|start"
+                android:scrollbars="vertical" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Pregunta 12: Recomendación -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12. ¿Recomendarías nuestra aplicación a otras personas?"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rgRecomendacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/rbRecomendacionSi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sí, definitivamente la recomendaría"
+                android:textSize="14sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbRecomendacionTalvez"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tal vez, si mejoran algunos aspectos"
+                android:textSize="14sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/rbRecomendacionNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No la recomendaría por ahora"
+                android:textSize="14sp"
+                android:padding="8dp" />
+        </RadioGroup>
+
+        <!-- Botón Enviar -->
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar Formulario"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/blue_light"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <!-- Cuerpo principal del altavoz -->
+    <path
+        android:fillColor="#FF1976D2"
+        android:pathData="M60,40 L140,40 L140,160 L60,160 Z" />
+    
+    <!-- Resaltado frontal -->
+    <path
+        android:fillColor="#FF42A5F5"
+        android:pathData="M70,50 L130,50 L130,150 L70,150 Z" />
+    
+    <!-- Rejilla del altavoz (líneas horizontales) -->
+    <path
+        android:strokeWidth="3"
+        android:strokeColor="#FF81D4FA"
+        android:pathData="M75,70 L125,70" />
+    <path
+        android:strokeWidth="3"
+        android:strokeColor="#FF81D4FA"
+        android:pathData="M75,85 L125,85" />
+    <path
+        android:strokeWidth="3"
+        android:strokeColor="#FF81D4FA"
+        android:pathData="M75,100 L125,100" />
+    <path
+        android:strokeWidth="3"
+        android:strokeColor="#FF81D4FA"
+        android:pathData="M75,115 L125,115" />
+    <path
+        android:strokeWidth="3"
+        android:strokeColor="#FF81D4FA"
+        android:pathData="M75,130 L125,130" />
+    
+    <!-- Líneas verticales de la rejilla -->
+    <path
+        android:strokeWidth="2"
+        android:strokeColor="#FF1976D2"
+        android:pathData="M85,70 L85,130" />
+    <path
+        android:strokeWidth="2"
+        android:strokeColor="#FF1976D2"
+        android:pathData="M100,70 L100,130" />
+    <path
+        android:strokeWidth="2"
+        android:strokeColor="#FF1976D2"
+        android:pathData="M115,70 L115,130" />
+    
+    <!-- Botones de control -->
+    <path
+        android:fillColor="#FF81D4FA"
+        android:pathData="M85,145 A5,5 0 1,1 95,145 A5,5 0 1,1 85,145 Z" />
+    <path
+        android:fillColor="#FF81D4FA"
+        android:pathData="M105,145 A5,5 0 1,1 115,145 A5,5 0 1,1 105,145 Z" />
+    
+    <!-- Indicador LED -->
+    <path
+        android:fillColor="#FF00FF00"
+        android:pathData="M96,55 A4,4 0 1,1 104,55 A4,4 0 1,1 96,55 Z" />
+</vector>

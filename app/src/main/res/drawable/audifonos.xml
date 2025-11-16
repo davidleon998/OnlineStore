@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <!-- Banda superior -->
+    <path
+        android:fillColor="#FF1976D2"
+        android:pathData="M30,80 Q30,50 50,50 L150,50 Q170,50 170,80 L170,90 L170,110 L170,120 Q170,150 150,150 L50,150 Q30,150 30,120 L30,110 L30,90 Z" />
+    
+    <!-- Banda superior interna (resaltado) -->
+    <path
+        android:fillColor="#FF42A5F5"
+        android:pathData="M40,70 Q40,55 50,55 L150,55 Q160,55 160,70 L160,130 Q160,145 150,145 L50,145 Q40,145 40,130 Z" />
+    
+    <!-- Auricular izquierdo -->
+    <path
+        android:fillColor="#FF1976D2"
+        android:pathData="M20,80 Q20,60 35,60 L65,60 Q80,60 80,80 L80,120 Q80,140 65,140 L35,140 Q20,140 20,120 Z" />
+    
+    <!-- Auricular derecho -->
+    <path
+        android:fillColor="#FF1976D2"
+        android:pathData="M120,80 Q120,60 135,60 L165,60 Q180,60 180,80 L180,120 Q180,140 165,140 L135,140 Q120,140 120,120 Z" />
+    
+    <!-- Detalles auriculares -->
+    <path
+        android:fillColor="#FF81D4FA"
+        android:pathData="M35,100 A15,15 0 1,1 65,100 A15,15 0 1,1 35,100 Z" />
+    <path
+        android:fillColor="#FF81D4FA"
+        android:pathData="M135,100 A15,15 0 1,1 165,100 A15,15 0 1,1 135,100 Z" />
+    
+    <!-- Cables/brazos -->
+    <path
+        android:strokeWidth="4"
+        android:strokeColor="#FF1976D2"
+        android:pathData="M65,100 L95,100" />
+    <path
+        android:strokeWidth="4"
+        android:strokeColor="#FF1976D2"
+        android:pathData="M135,100 L105,100" />
+</vector>

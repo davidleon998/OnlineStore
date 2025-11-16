@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <!-- Pantalla principal -->
+    <path
+        android:fillColor="#FF1976D2"
+        android:pathData="M20,30 L180,30 L180,120 L20,120 Z" />
+    
+    <!-- Pantalla interna (pantalla encendida) -->
+    <path
+        android:fillColor="#FF42A5F5"
+        android:pathData="M30,40 L170,40 L170,110 L30,110 Z" />
+    
+    <!-- Resaltado de pantalla -->
+    <path
+        android:fillColor="#FF81D4FA"
+        android:pathData="M35,45 L165,45 L165,75 L35,75 Z" />
+    
+    <!-- Base del monitor -->
+    <path
+        android:fillColor="#FF1976D2"
+        android:pathData="M80,120 L80,130 L120,130 L120,120 Z" />
+    
+    <!-- Soporte del monitor -->
+    <path
+        android:fillColor="#FF42A5F5"
+        android:pathData="M70,130 L130,130 L130,150 L70,150 Z" />
+    
+    <!-- Base plana -->
+    <path
+        android:fillColor="#FF1976D2"
+        android:pathData="M50,150 L150,150 L150,160 L50,160 Z" />
+    
+    <!-- Webcam pequeña arriba -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M95,35 A5,5 0 1,1 105,35 A5,5 0 1,1 95,35 Z" />
+</vector>

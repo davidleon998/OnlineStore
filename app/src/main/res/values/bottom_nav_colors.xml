@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bottom_nav_selected">@color/blue_dark</color>
+    <color name="bottom_nav_unselected">@android:color/darker_gray</color>
+</resources>
+
