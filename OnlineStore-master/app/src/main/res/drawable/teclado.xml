@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <!-- Base del teclado -->
+    <path
+        android:fillColor="#FF1976D2"
+        android:pathData="M20,60 L180,60 L180,140 L20,140 Z" />
+    
+    <!-- Teclas principales (fila superior) -->
+    <path
+        android:fillColor="#FF42A5F5"
+        android:pathData="M25,70 L45,70 L45,85 L25,85 Z" />
+    <path
+        android:fillColor="#FF42A5F5"
+        android:pathData="M50,70 L70,70 L70,85 L50,85 Z" />
+    <path
+        android:fillColor="#FF42A5F5"
+        android:pathData="M75,70 L95,70 L95,85 L75,85 Z" />
+    <path
+        android:fillColor="#FF42A5F5"
+        android:pathData="M100,70 L120,70 L120,85 L100,85 Z" />
+    <path
+        android:fillColor="#FF42A5F5"
+        android:pathData="M125,70 L145,70 L145,85 L125,85 Z" />
+    <path
+        android:fillColor="#FF42A5F5"
+        android:pathData="M150,70 L170,70 L170,85 L150,85 Z" />
+    
+    <!-- Teclas segunda fila -->
+    <path
+        android:fillColor="#FF42A5F5"
+        android:pathData="M30,90 L55,90 L55,105 L30,105 Z" />
+    <path
+        android:fillColor="#FF42A5F5"
+        android:pathData="M60,90 L85,90 L85,105 L60,105 Z" />
+    <path
+        android:fillColor="#FF42A5F5"
+        android:pathData="M90,90 L115,90 L115,105 L90,105 Z" />
+    <path
+        android:fillColor="#FF42A5F5"
+        android:pathData="M120,90 L145,90 L145,105 L120,105 Z" />
+    <path
+        android:fillColor="#FF42A5F5"
+        android:pathData="M150,90 L165,90 L165,105 L150,105 Z" />
+    
+    <!-- Teclas tercera fila -->
+    <path
+        android:fillColor="#FF42A5F5"
+        android:pathData="M35,110 L65,110 L65,125 L35,125 Z" />
+    <path
+        android:fillColor="#FF42A5F5"
+        android:pathData="M70,110 L100,110 L100,125 L70,125 Z" />
+    <path
+        android:fillColor="#FF42A5F5"
+        android:pathData="M105,110 L135,110 L135,125 L105,125 Z" />
+    <path
+        android:fillColor="#FF42A5F5"
+        android:pathData="M140,110 L165,110 L165,125 L140,125 Z" />
+    
+    <!-- Espacio entre teclas (sombras) -->
+    <path
+        android:fillColor="#FF1976D2"
+        android:pathData="M25,86 L45,86 L45,87 L25,87 Z" />
+    <path
+        android:fillColor="#FF1976D2"
+        android:pathData="M50,86 L70,86 L70,87 L50,87 Z" />
+    
+    <!-- Barra espaciadora -->
+    <path
+        android:fillColor="#FF81D4FA"
+        android:pathData="M40,130 L160,130 L160,135 L40,135 Z" />
+</vector>

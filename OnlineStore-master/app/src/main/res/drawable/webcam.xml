@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <!-- Cuerpo principal de la webcam -->
+    <path
+        android:fillColor="#FF1976D2"
+        android:pathData="M70,50 L130,50 Q150,50 150,70 L150,110 Q150,130 130,130 L70,130 Q50,130 50,110 L50,70 Q50,50 70,50 Z" />
+    
+    <!-- Resaltado superior -->
+    <path
+        android:fillColor="#FF42A5F5"
+        android:pathData="M75,55 L125,55 Q140,55 140,70 L140,110 Q140,125 125,125 L75,125 Q60,125 60,110 L60,70 Q60,55 75,55 Z" />
+    
+    <!-- Lente de la cámara -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M75,90 A25,25 0 1,1 125,90 A25,25 0 1,1 75,90 Z" />
+    
+    <!-- Lente interna (reflejo) -->
+    <path
+        android:fillColor="#FF81D4FA"
+        android:pathData="M82,90 A18,18 0 1,1 118,90 A18,18 0 1,1 82,90 Z" />
+    
+    <!-- Reflejo en el lente -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M89,85 A6,6 0 1,1 101,85 A6,6 0 1,1 89,85 Z" />
+    
+    <!-- Micrófono (pequeños agujeros) -->
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M82,115 A3,3 0 1,1 88,115 A3,3 0 1,1 82,115 Z" />
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M97,115 A3,3 0 1,1 103,115 A3,3 0 1,1 97,115 Z" />
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M112,115 A3,3 0 1,1 118,115 A3,3 0 1,1 112,115 Z" />
+    
+    <!-- Clip/base para montar -->
+    <path
+        android:fillColor="#FF42A5F5"
+        android:pathData="M60,130 L140,130 L140,145 L60,145 Z" />
+</vector>

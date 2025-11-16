@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permisos para cámara y ubicación -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OnlineStore">
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:label="Login"
+            android:theme="@style/Theme.OnlineStore">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.OnlineStore" />
+        <activity
+            android:name=".DetalleActivity"
+            android:exported="false"
+            android:label="Detalle del Producto"
+            android:theme="@style/Theme.OnlineStore" />
+        <activity
+            android:name=".CarritoActivity"
+            android:exported="false"
+            android:label="@string/carrito_compras"
+            android:theme="@style/Theme.OnlineStore" />
+        <activity
+            android:name=".QRGeneratorActivity"
+            android:exported="false"
+            android:label="Código QR del Formulario"
+            android:theme="@style/Theme.OnlineStore" />
+        <activity
+            android:name=".FormularioActivity"
+            android:exported="false"
+            android:label="Formulario de Vinculación"
+            android:theme="@style/Theme.OnlineStore" />
+        <activity
+            android:name=".MapaActivity"
+            android:exported="false"
+            android:label="Ubicación de la Tienda"
+            android:theme="@style/Theme.OnlineStore" />
+        
+        <!-- Meta-data para Google Maps API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_GOOGLE_MAPS_API_KEY" />
+    </application>
+
+</manifest>
